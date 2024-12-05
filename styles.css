@@ -1,0 +1,193 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav ul li a i {
+    margin-right: 5px; /* Espaço entre o ícone e o texto */
+    }
+
+.cardapio-item h3{
+    font-size: 30px;
+    color: #555; font-family: ‘Roboto’, Arial, sans-serif
+}
+
+.cardapio-item {
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Adicionamos a transição para
+    background-color */
+    }
+    .cardapio-item:hover {
+    transform: translateY(-5px);
+    background-color: #a5a73b; 
+    }
+
+    header {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 0;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 1000;
+        background-image: linear-gradient(to right, rgba(0,0,0,0.8), rgba(0,0,0,0.6)), url('header-bg.jpg');
+        background-size: cover;
+        background-position: center;
+        }
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f8f8f8;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+header h1 {
+    font-size: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+.section {
+    padding: 80px 0;
+    background-color: #fff;
+}
+
+.section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.cardapio-item {
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    z-index: 1000;
+        background-image: linear-gradient(to right, rgba(0,0,0,0.8), rgba(0,0,0,0.6)), url('footer.jpg');
+        background-size: cover;
+        background-position: center;
+}
+
+.container {
+    width: 90%; /* Ajuste da largura para telas menores */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    }
+    header h1 {
+    font-size: 24px; /* Redução o tamanho da fonte para se adequar a telas menores */
+    }
+    .cardapio-item {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    }
+
+#sobre {
+    background-color: #f4f4f4;
+    padding: 180px 0;
+}
+
+
+html,
+body {
+  height: 100%;
+}
+
+/* End  */
+
+:root {
+  --gutter: 20px;
+}
+
+
+.horizonal-slider {
+  display: grid;
+  grid-gap: calc(var(--gutter) / 2);
+  grid-template-columns: repeat(6, calc(50% - var(--gutter) * 2));
+  grid-template-rows: minmax(150px, 1fr);
+  
+  overflow-x: scroll;
+  scroll-snap-type: x proximity;
+  padding-bottom: calc(.75 * var(--gutter));
+  margin-bottom: calc(-.25 * var(--gutter));
+  list-style: none;
+  padding: 0;
+}
+
+.horizontal-slider-container {
+  width: 100%;
+  height: 667px;
+  background: #DBD0BC;
+  overflow-y: scroll;
+}
+
+.item {
+  scroll-snap-align: center;
+  padding: calc(var(--gutter) / 2 * 1.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  border-radius: 8px;
+}
+
+.slider img {
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    vertical-align: top;
+}
